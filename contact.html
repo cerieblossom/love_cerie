@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Love, Cerie</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+  <header>
+    <p class="from-text">FROM CERIE.</p>
+    <h1 class="main-title">love, cerie</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a href="letters.html">LETTERS</a></li>
+        <li><a href="music.html">MUSIC</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+	<li><a href="books.html">BOOKS</a></li>
+        <li><a class="active" href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+<body>
+  <div class="contact-container">
+    <h1 class="title">let’s connect ♡</h1>
+    <p class="subtitle">a soft little table where you can always find me</p>
+
+    <table class="contact-table" id="contactTable">
+      <tr>
+        <th>type</th>
+        <th>contact</th>
+        <th>note</th>
+      </tr>
+      <tr>
+        <td>personal email</td>
+        <td>azizifatin05@gmail.com</td>
+        <td>feel free to drop anything warm or kind 🌷</td>
+      </tr>
+      <tr>
+        <td>contact number</td>
+        <td>+60 111 7017 1807</td>
+        <td>text preferred over calls ✧</td>
+      </tr>
+      <tr>
+        <td>student email</td>
+        <td>2023654986@student.uitm.edu.my</td>
+        <td>for official or school things only 🍃</td>
+      </tr>
+    </table>
+
+    <div class="bottom-space"></div>
+  </div>
+
+  <script>
+    // simple welcome message when page loads
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        alert("hi there ♡ thanks for visiting — feel free to reach out anytime.");
+      }, 500); // slight delay for aesthetic
+    });
+
+    // subtle hover highlight using JavaScript (for fun)
+    const table = document.getElementById('contactTable');
+    const rows = table.getElementsByTagName('tr');
+
+    for (let i = 1; i < rows.length; i++) {
+      rows[i].addEventListener('mouseover', () => {
+        rows[i].style.backgroundColor = '#fff0f4';
+      });
+      rows[i].addEventListener('mouseout', () => {
+        rows[i].style.backgroundColor = '#fffafc';
+      });
+    }
+  </script>
+
+ <div class="footer">
+    <div class="container">
+      <p>&copy; 2025, cerieblossom. All right reserved.
+        <br>
+        <a href="contact.html">Contact me ^^</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+
+</body>
+</html>

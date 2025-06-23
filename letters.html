@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Letters - Love, Cerie</title>
+  <link rel="stylesheet" href="style.css" >
+</head>
+<body>
+
+ <header>
+    <p class="from-text">FROM CERIE.</p>
+    <h1 class="main-title">love, cerie</h1>
+    <nav>
+      <ul class="navbar">
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li><a class="active" href="letters.html">LETTERS</a></li>
+        <li><a href="music.html">MUSIC</a></li>
+        <li><a href="gallery.html">GALLERY</a></li>
+	<li><a href="books.html">BOOKS</a></li>
+        <li><a href="contact.html">CONTACT</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="letter-section">
+      <h2>Letters For You</h2>
+      <p>
+        Here’s where the unsent words live — sealed in digital envelopes just for you.
+      </p>
+
+      <!-- Letter aesthetic animation or content goes here -->
+      <div class="letter-box">
+        <p style="margin-top: 2rem; font-style: italic; color: #999;">
+        </p>
+      </div>
+    </section>
+  </main>
+
+<main>
+
+  <h1>dear you,</h1>
+
+  <div class="envelope-gallery">
+    <div class="envelope-card" onclick="showPopup('image/letter1.jpg')"></div>
+    <div class="envelope-card" onclick="showPopup('image/letter2.jpg')"></div>
+    <div class="envelope-card" onclick="showPopup('image/letter3.jpg')"></div>
+    <div class="envelope-card" onclick="showPopup('image/letter4.jpg')"></div>
+  </div>
+
+  <!-- POPUP IMAGE -->
+  <div id="popup-overlay" onclick="hidePopup()">
+    <img id="popup-image" src="" alt="popup letter" />
+  </div>
+
+  <script>
+    function showPopup(imageSrc) {
+      const popup = document.getElementById('popup-overlay');
+      const img = document.getElementById('popup-image');
+      img.src = imageSrc;
+      popup.style.display = 'flex';
+    }
+
+    function hidePopup() {
+      document.getElementById('popup-overlay').style.display = 'none';
+    }
+  </script>
+
+</main>
+
+<div class="footer">
+    <div class="container">
+      <p>&copy; 2025, cerieblossom. All right reserved.
+        <br>
+        <a href="contact.html">Contact me ^^</a>
+      </p>
+    </div>
+  </div>
+</body>
+
+
+</body>
+</html>
+
